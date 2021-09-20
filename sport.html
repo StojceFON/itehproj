@@ -1,27 +1,13 @@
-<?php 
-
-session_start();
-
-if (!isset($_SESSION['username'])) {
-    header("Location: index.php");
-}
-
-?>
-
-<!DOCTYPE html>
 <html>
-    
     <head>
         <title></title>
-        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="sport.css">
     </head>
 
     <body>
-        
         <div class="menu-bar"> 
-        <ul> 
-        <?php echo "<h1>Welcome " . $_SESSION['username'] . "</h1>"; ?>
-            <li class="a"><a href="welcome.php">Početna</a></li>
+        <ul>
+            <li class="a"><a href="menu.html">Početna</a></li>
             <li><a href="kultura.html">Kultura</a></li>
             <li><a href="muzika.html">Muzika</a>
                 <div class="sub-menu-muzika">
